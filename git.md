@@ -2,8 +2,20 @@ Git
 ===
 
 Add an existing repo to db.classicalcode.com, and name the repo `foo`. First
-add `conf/gitolite.conf` in the gitolite-admin repo. Push those changes.
+add `foo` to `conf/gitolite.conf` in the gitolite-admin repo. Push those 
+changes.
 
     cd /path/to/repo
-    git remote add newremote git@db.classicalcode.com:foo
-    git push newremote 
+    git remote add origin git@db.classicalcode.com:foo
+    git push origin master
+
+Add an existing repo to github and name the repo `foo`. First create the repo
+on github. Then:
+
+    cd /path/to/repo
+    git remote add origin git@github.com:foo
+    git push origin master
+
+Correct the last commit message:
+
+    git commit --amend -m "New commit message"
