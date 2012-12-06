@@ -19,3 +19,7 @@ on github. Then:
 Correct the last commit message:
 
     git commit --amend -m "New commit message"
+
+Cone a specific branch of a repo:
+
+    git clone user@git-server:project_name.git -b branch_name /some/folder
