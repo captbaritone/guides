@@ -20,6 +20,20 @@ Correct the last commit message:
 
     git commit --amend -m "New commit message"
 
-Cone a specific branch of a repo:
+Clone a specific branch of a repo:
 
     git clone user@git-server:project_name.git -b branch_name /some/folder
+
+Commit only part of a file. This will prompt you through each chunk. You can
+select the part(s) you want with `y` (stage this chuck), `n` (don't stage this
+part), `s` (split this hunk into smaller parts).
+
+    git add -p filename.ext
+
+See what content has been staged:
+
+    git diff --staged
+
+Unstage a staged file:
+
+    git reset filename.ext
