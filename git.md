@@ -2,7 +2,7 @@ Git
 ===
 
 Add an existing repo to db.classicalcode.com, and name the repo `foo`. First
-add `foo` to `conf/gitolite.conf` in the gitolite-admin repo. Push those 
+add `foo` to `conf/gitolite.conf` in the gitolite-admin repo. Push those
 changes.
 
     cd /path/to/repo
@@ -16,7 +16,7 @@ on github. Then:
     git remote add origin git@github.com:foo
     git push origin master
 
-Correct the last commit message:
+Correct the last commit message and contents:
 
     git commit --amend -m "New commit message"
 
@@ -37,3 +37,8 @@ See what content has been staged:
 Unstage a staged file:
 
     git reset filename.ext
+
+Push new branch to new remote server:
+
+    git push -u origin branch-name
+
