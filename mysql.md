@@ -22,7 +22,7 @@ Same as above, but compress the output to backup.sql.gz
 
 As captbaritone, restore database foo from backup.sql
 
-    mysql -u captbaritone -p < backup.sql
+    mysql -u captbaritone -p foo < backup.sql
 
 As captbaritone, run the queries in update.sql on database foo
 
